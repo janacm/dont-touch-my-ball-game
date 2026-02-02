@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>don't touch my ball</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="ui">
+      <div id="panel" role="dialog" aria-modal="true" aria-labelledby="title">
+        <h1 id="title">don't touch my ball</h1>
+        <p class="sub">
+          Your cursor is the ball. Random junk flies in—move out of the way.
+        </p>
+        <ul class="rules" aria-label="Controls">
+          <li><span class="k">Mouse</span> move the ball</li>
+          <li><span class="k">F</span> fullscreen</li>
+          <li><span class="k">R</span> restart</li>
+        </ul>
+        <button id="start-btn" type="button">Start</button>
+        <div id="hint" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <canvas id="game" aria-label="Game canvas"></canvas>
+    <script src="./game.js"></script>
+  </body>
+</html>
+

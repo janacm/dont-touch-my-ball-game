@@ -1,0 +1,18 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "serve": "python3 -m http.server 5173 --bind 127.0.0.1",
+    "pw:loop": "PLAYWRIGHT_HOST_PLATFORM_OVERRIDE=mac15-arm64 node tools/web_game_playwright_client.js --url http://127.0.0.1:5173 --click-selector #start-btn --actions-file tools/actions_dodge.json --iterations 3 --pause-ms 250",
+    "test": "node -e \"console.log('ok')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "playwright": "^1.58.1"
+  }
+}
