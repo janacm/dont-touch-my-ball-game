@@ -81,6 +81,8 @@
 
   function hideMenu() {
     document.body.classList.add("playing");
+    uiRoot.style.display = "none";
+    panel.style.display = "none";
   }
 
   function resetGame() {
